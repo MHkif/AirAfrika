@@ -1,13 +1,14 @@
 package yc.java.airafrika.DAO.impl;
 
-import yc.java.airafrika.Database.Database;
+import yc.java.airafrika.Database.PostrgreSQLDatabase;
 import yc.java.airafrika.Entities.Admin;
 import yc.java.airafrika.Utils.Session;
 
 import java.sql.*;
 
 public class AdminDAO {
-    private final Connection CONNECTION = Database.getConnection();
+    private final PostrgreSQLDatabase database = new PostrgreSQLDatabase();
+    private final Connection CONNECTION = database.getConnection();
 
     public Admin login(String email, String password) throws SQLException {
         Admin admin = null;

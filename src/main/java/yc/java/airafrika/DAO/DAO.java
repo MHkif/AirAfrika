@@ -1,14 +1,16 @@
 package yc.java.airafrika.DAO;
 
 
-import yc.java.airafrika.Database.Database;
+import org.hibernate.boot.model.relational.Database;
+import yc.java.airafrika.Database.PostrgreSQLDatabase;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
 public interface DAO<T> {
-    final Connection CONNECTION = Database.getConnection();
+    final PostrgreSQLDatabase database = new PostrgreSQLDatabase();
+    final Connection CONNECTION = database.getConnection();
 
     T save(T t) throws SQLException;
     T update(T t) throws SQLException;
