@@ -13,31 +13,35 @@ public class Extra {
         return id;
     }
 
-    public void setId(int id) {
+    public Extra setId(int id) {
         this.id = id;
+        return this;
     }
 
     public Flight getFlight() {
         return flight;
     }
 
-    public void setFlight(Flight flight) {
+    public Extra setFlight(Flight flight) {
         this.flight = flight;
+        return this;
     }
 
     public ExtraType getType() {
         return type;
     }
 
-    public void setType(ExtraType type) {
+    public Extra setType(ExtraType type) {
         this.type = type;
+        return this;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public Extra setAmount(double amount) {
         this.amount = amount;
+        return this;
     }
 }

@@ -13,31 +13,35 @@ public class Baggage {
         return id;
     }
 
-    public void setId(String id) {
+    public Baggage setId(String id) {
         this.id = id;
+        return this;
     }
 
     public BaggageType getType() {
         return type;
     }
 
-    public void setType(BaggageType type) {
+    public Baggage setType(BaggageType type) {
         this.type = type;
+        return this;
     }
 
     public double getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public Baggage setWeight(double weight) {
         this.weight = weight;
+        return this;
     }
 
     public Flight getFlight() {
         return flight;
     }
 
-    public void setFlight(Flight flight) {
+    public Baggage setFlight(Flight flight) {
         this.flight = flight;
+        return this;
     }
 }

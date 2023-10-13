@@ -25,98 +25,108 @@ public class Flight {
         return id;
     }
 
-    public void setId(String id) {
+    public Flight setId(String id) {
         this.id = id;
+        return this;
     }
 
     public AirPort getDeparture() {
         return departure;
     }
 
-    public void setDeparture(AirPort departure) {
+    public Flight setDeparture(AirPort departure) {
         this.departure = departure;
+        return this;
     }
 
     public AirPort getArrival() {
         return arrival;
     }
 
-    public void setArrival(AirPort arrival) {
+    public Flight setArrival(AirPort arrival) {
         this.arrival = arrival;
+        return this;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public Flight setAmount(double amount) {
         this.amount = amount;
+        return this;
     }
 
     public FilghtType getType() {
         return type;
     }
 
-    public void setType(FilghtType type) {
+    public Flight setType(FilghtType type) {
         this.type = type;
+        return this;
     }
 
     public LocalDate getDepart_At() {
         return depart_At;
     }
 
-    public void setDepart_At(LocalDate depart_At) {
+    public Flight setDepart_At(LocalDate depart_At) {
         this.depart_At = depart_At;
+        return this;
     }
 
     public LocalDate getArrived_At() {
         return arrived_At;
     }
 
-    public void setArrived_At(LocalDate arrived_At) {
+    public Flight setArrived_At(LocalDate arrived_At) {
         this.arrived_At = arrived_At;
+        return this;
     }
 
     public AirPlane getAirPlane() {
         return airPlane;
     }
 
-    public void setAirPlane(AirPlane airPlane) {
+    public Flight setAirPlane(AirPlane airPlane) {
         this.airPlane = airPlane;
+        return this;
     }
-
-
 
     public List<Passenger> getPassengerList() {
         return passengerList;
     }
 
-    public void setPassengerList(List<Passenger> passengerList) {
+    public Flight setPassengerList(List<Passenger> passengerList) {
         this.passengerList = passengerList;
+        return this;
     }
 
     public List<Baggage> getBaggageList() {
         return baggageList;
     }
 
-    public void setBaggageList(List<Baggage> baggageList) {
+    public Flight setBaggageList(List<Baggage> baggageList) {
         this.baggageList = baggageList;
+        return this;
     }
 
     public List<Extra> getExtraList() {
         return extraList;
     }
 
-    public void setExtraList(List<Extra> extraList) {
+    public Flight setExtraList(List<Extra> extraList) {
         this.extraList = extraList;
+        return this;
     }
 
     public List<Escale> getEscaleList() {
         return escaleList;
     }
 
-    public void setEscaleList(List<Escale> escaleList) {
+    public Flight setEscaleList(List<Escale> escaleList) {
         this.escaleList = escaleList;
+        return this;
     }
 
     @Override

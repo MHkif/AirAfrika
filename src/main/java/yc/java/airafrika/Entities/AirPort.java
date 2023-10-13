@@ -13,39 +13,44 @@ public class AirPort {
         return id;
     }
 
-    public void setId(int id) {
+    public AirPort setId(int id) {
         this.id = id;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public AirPort setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getCity() {
         return city;
     }
 
-    public void setCity(String city) {
+    public AirPort setCity(String city) {
         this.city = city;
+        return this;
     }
 
     public String getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public AirPort setCountry(String country) {
         this.country = country;
+        return this;
     }
 
     public List<Flight> getFlightList() {
         return flightList;
     }
 
-    public void setFlightList(List<Flight> flightList) {
+    public AirPort setFlightList(List<Flight> flightList) {
         this.flightList = flightList;
+        return this;
     }
 }

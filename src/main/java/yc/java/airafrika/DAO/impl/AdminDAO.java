@@ -20,10 +20,13 @@ public class AdminDAO {
             ResultSet res = preparedStatement.executeQuery();
 
             if (res.next()){
+                /*
                 admin = Admin.getInstance(
                         res.getString("id"), res.getString("fullName"),
                         res.getString("email"), res.getString("password") );
                 Session.getInstance().set("Admin", admin);
+
+                 */
             }else{
                 return null;
             }

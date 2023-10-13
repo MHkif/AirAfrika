@@ -12,8 +12,9 @@ public class Passenger extends User {
         return flightList;
     }
 
-    public void setFlightList(List<Flight> flightList) {
+    public Passenger setFlightList(List<Flight> flightList) {
         this.flightList = flightList;
+        return this;
     }
 
     @Override
